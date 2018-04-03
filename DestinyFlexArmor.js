@@ -1,5 +1,5 @@
-// Destiny 1 Armor Testing
-// Finds which stat split combinations in armor pieces will produce the most options for a Tier 12 build.
+// DestinyFlexArmor
+// Finds which stat split combinations in armor pieces will produce the most options for a Tier 12 build in Bungie's game 'Destiny 1'.
 
 // FileSystem module for writing results to txt file
 var fs = require('fs');
@@ -322,7 +322,7 @@ var artifact = [
 
 var collection = [];
 
-var armorSet = [head, chest, arms, legs, classItem, ghost, artifact];
+var armorSet = [head, arms, chest, legs, classItem, artifact, ghost];
 
 // Iterates through all combinations to see what qualifies for a given stat bar set
 function judge(i, d, s) {
@@ -339,8 +339,8 @@ function judge(i, d, s) {
                   armorSet[2][thisChest], 
                   armorSet[3][thisLeg], 
                   armorSet[4][thisClass], 
-                  armorSet[6][thisArt], 
-                  armorSet[5][thisGhost] 
+                  armorSet[5][thisArt], 
+                  armorSet[6][thisGhost] 
                 ];
                 var statTotal = {
                   int: 0,
@@ -448,22 +448,24 @@ collection.sort(function(a, b){
 });
 
 // remove txt file then write results to new
-fs.unlink('./destiny-armor.txt', (err) => {
-  if (err) throw err;
-  console.log('./destiny-armor.txt was deleted');
-  fs.appendFile("./destiny-armor.txt", "Destiny 1 Flexible Tier-12 Generator\nHead/Arms/Chest/Legs/Class/Artifact/Ghost\n", function(error) {
-    if (error) {
-      console.error("write error: " + error.message);
-    }
-    collection.forEach(ele => {
-      // output results to console
-      console.log(ele.splits+" --- "+ele.statSet);
-      // output results to txt file
-      fs.appendFile("./destiny-armor.txt", ele.splits+" --- "+ele.statSet+"\n", function(error) {
-        if (error) {
-          console.error("write error: " + error.message);
-        }
-      })
+if (fs.existsSync("./DestinyFlexArmor.txt")) {
+  fs.unlinkSync('./DestinyFlexArmor.txt', (err) => {
+    if (err) throw err;
+  })
+  console.log('./DestinyFlexArmor.txt was deleted');
+}
+fs.appendFile("./DestinyFlexArmor.txt", "Destiny 1 Flexible Tier-12 Generator\nHead/Arms/Chest/Legs/Class/Artifact/Ghost\n", function(error) {
+  if (error) {
+    console.error("write error: " + error.message);
+  }
+  collection.forEach(ele => {
+    // output results to console
+    console.log(ele.splits+" --- "+ele.statSet);
+    // output results to txt file
+    fs.appendFile("./DestinyFlexArmor.txt", ele.splits+" --- "+ele.statSet+"\n", function(error) {
+      if (error) {
+        console.error("write error: " + error.message);
+      }
     })
-  });
+  })
 });

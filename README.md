@@ -45,26 +45,28 @@ Once all that is done, the results are logged to console (likely exceeding the s
 Unsurprisingly, there are no equipment loadouts that will allow you the full range of Tier-12 builds. Eighteen different stat split combinations exist that have four different Tier-12 builds available to them through point allocation. Because it's such a short list, here they are:
 ```
 Head/Arms/Chest/Legs/Class/Artifact/Ghost
-D/S I/S I/D I/S D/S I/D D/S --- 3/4/5,4/3/5,4/4/4,5/3/4
-I/S I/S D/S I/D D/S I/D I/D --- 4/4/4,4/5/3,5/3/4,5/4/3
-I/S I/S D/S D/S D/S I/D I/D --- 3/4/5,3/5/4,4/3/5,4/4/4
+D/S I/D D/S I/S I/S I/D I/S --- 3/4/5,3/5/4,4/3/5,4/4/4
+I/S D/S I/S I/D D/S I/D I/D --- 4/4/4,4/5/3,5/3/4,5/4/3
+I/S D/S I/S D/S D/S I/D I/D --- 3/4/5,3/5/4,4/3/5,4/4/4
 I/S D/S D/S I/S I/D I/D D/S --- 3/4/5,3/5/4,4/3/5,4/4/4
 I/S D/S D/S I/S D/S I/D I/D --- 3/4/5,3/5/4,4/3/5,4/4/4
-I/S I/S I/D D/S D/S I/D D/S --- 3/4/5,3/5/4,4/3/5,4/4/4
-I/S I/S D/S D/S I/D I/D I/S --- 3/4/5,4/3/5,4/4/4,5/3/4
-I/S I/S D/S D/S I/S I/D I/D --- 3/4/5,4/3/5,4/4/4,5/3/4
-I/S D/S I/D I/S D/S I/D D/S --- 3/4/5,3/5/4,4/3/5,4/4/4
-I/S I/S D/S D/S I/D I/D D/S --- 3/4/5,3/5/4,4/3/5,4/4/4
-D/S D/S I/D I/S I/S I/D I/S --- 3/4/5,3/5/4,4/3/5,4/4/4
-I/D I/S D/S D/S I/D I/D I/S --- 3/5/4,4/4/4,4/5/3,5/4/3
-I/D I/S D/S D/S I/S I/D I/D --- 3/5/4,4/4/4,4/5/3,5/4/3
+I/S I/D I/S D/S D/S I/D D/S --- 3/4/5,3/5/4,4/3/5,4/4/4
+I/S I/D D/S I/S D/S I/D D/S --- 3/4/5,3/5/4,4/3/5,4/4/4
+I/S D/S I/S D/S I/D I/D I/S --- 3/4/5,4/3/5,4/4/4,5/3/4
+I/S D/S I/S D/S I/S I/D I/D --- 3/4/5,4/3/5,4/4/4,5/3/4
+I/S D/S I/S D/S I/D I/D D/S --- 3/4/5,3/5/4,4/3/5,4/4/4
+D/S I/D I/S I/S D/S I/D D/S --- 3/4/5,4/3/5,4/4/4,5/3/4
+I/D D/S I/S D/S I/D I/D I/S --- 3/5/4,4/4/4,4/5/3,5/4/3
+I/D D/S I/S D/S I/S I/D I/D --- 3/5/4,4/4/4,4/5/3,5/4/3
 I/D I/S I/S D/S I/D I/D D/S --- 4/4/4,4/5/3,5/3/4,5/4/3
 I/D I/S I/S D/S D/S I/D I/D --- 4/4/4,4/5/3,5/3/4,5/4/3
-I/S I/S I/D D/S I/D I/D D/S --- 4/4/4,4/5/3,5/3/4,5/4/3
-I/S I/S I/D D/S D/S I/D I/D --- 4/4/4,4/5/3,5/3/4,5/4/3
-I/S I/S D/S I/D I/D I/D D/S --- 4/4/4,4/5/3,5/3/4,5/4/3
+I/S I/D I/S D/S I/D I/D D/S --- 4/4/4,4/5/3,5/3/4,5/4/3
+I/S I/D I/S D/S D/S I/D I/D --- 4/4/4,4/5/3,5/3/4,5/4/3
+I/S D/S I/S I/D I/D I/D D/S --- 4/4/4,4/5/3,5/3/4,5/4/3
 ```
 Keen observers will notice that none of them provide the coveted "5/5/2" (or "2/5/5" if you're rolling Sunsinger) build.
+
+(Two hundred and forty-eight combinations will allow for three different Tier-12 builds.)
 
 Overall, I don't know that these results are terribly useful in any way, but they do provide a bit of insight into the game's meta, as well as providing a nice little exercise in recursion programming.
 
