@@ -11,6 +11,7 @@ In Destiny, the player's equipment system contains seven different slots for ite
 - Legs
 - Class Item
 - Artifact
+- Ghost
 
 The player's character also holds three Stats:
 - Intellect (charges your Super ability)
