@@ -376,8 +376,10 @@ function judge(i, d, s) {
                     if (collection.length === 0) {
                       collection.push(build);
                     } else {
+                      // check for duplicate build in [collection]
                       var dupeIndex = checkDupe(build);
                       if (dupeIndex) {
+                        // check for duplicate statSet in duplicate build
                         var statIndex = checkDupeStatSet(dupeIndex, build);
                         if (!statIndex) {
                           collection[dupeIndex].statSet.push(build.statSet[0]);
@@ -395,7 +397,6 @@ function judge(i, d, s) {
       }
     }
   }
-  // console.log("collection[0] =", collection[0]);
 }
 
 function checkDupe(build) {
@@ -446,7 +447,7 @@ collection.sort(function(a, b){
   return b.statSet.length - a.statSet.length;
 });
 
-// remove txt file them write results to new
+// remove txt file then write results to new
 fs.unlink('./destiny-armor.txt', (err) => {
   if (err) throw err;
   console.log('./destiny-armor.txt was deleted');

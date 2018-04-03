@@ -77,7 +77,7 @@ Some of the main parameters may be changed to provide a greater number of result
 The core functionality could be adapted to a similarly working game, like Destiny 2. But I haven't played Destiny 2, so I don't know how that game is set up.
 
 ## Math is fun and mental
-For reference, the number of potential combinations (within the above limitations) in equipment stat splits is 279,936. (6 split options, point allocation inclusive, on each of 7 equipment slots, so 6 to the 7th power.) This turns into 2,187 loadout combinations when discounting point allocation (3 to the 7th power), of which 1,665 loadouts qualify as Tier-12.
+The number of potential combinations (within the above limitations) in equipment stat splits is 279,936. (6 split options, point allocation inclusive, on each of 7 equipment slots, so 6 to the 7th power.) This turns into 2,187 loadout combinations when discounting point allocation (3 to the 7th power), of which 1,665 loadouts qualify as Tier-12. There are 10 different combinations of Tier-12 stat builds.
 
 ## Contributors
 Just me, because nobody else cares in the first place, especially since the game is pretty old by now.
